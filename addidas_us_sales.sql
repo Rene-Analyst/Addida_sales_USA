@@ -178,17 +178,21 @@ FROM adidas_us_sales
 GROUP BY Invoice_Date
 ORDER BY 1 
 
-CREATE VIEW Retailershareby_region
-AS
-SELECT
-    Region,
-    Retailer,
-    SUM(Total_Sales) AS Total_Region_Sales,
-    SUM(Total_Sales) / SUM(SUM(Total_Sales)) OVER (PARTITION BY Region) * 100 AS Sales_Share_Percent
-FROM
-    adidas_us_sales
-GROUP BY
-    Region, Retailer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
