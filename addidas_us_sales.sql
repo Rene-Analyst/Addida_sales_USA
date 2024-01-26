@@ -1,4 +1,4 @@
-/*
+
 -- calculate top performing retailer
 
 SELECT 
